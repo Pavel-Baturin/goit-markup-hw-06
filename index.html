@@ -52,9 +52,63 @@
                     <div class="modal">
                         <button data-modal-close class="modal-close">
                             <svg class="icon-modal">
-                                <use href="./images/symbol-defs.svg#icon-Vector"></use>
+                                <use href="./images/symbol-defs.svg#icon-close-black"></use>
                             </svg>
                         </button>
+                        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+                        <form class="form" autocomplete="off">
+                            
+                            <label class="form-field">
+                                <input type="text" class="form-input" name="name" placeholder=" " />
+                                <span class="form-label">Имя</span>
+                                <span>
+                                    <svg class="icon-form">
+                                        <use href="./images/symbol-defs.svg#icon-person-black"></use>
+                                    </svg>
+                                </span>
+                            </label>
+                                
+                             <label class="form-field">
+                                <input type="tel" class="form-input" name="phone-number" placeholder=" " />
+                                <span class="form-label">Телефон</span>
+                                <span>
+                                    <svg class="icon-form">
+                                        <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+                                    </svg>
+                                </span>
+                            </label>
+                                
+                            <label class="form-field">
+                                <input type="email" class="form-input" name="mail" placeholder=" " />
+                                <span class="form-label">Почта</span>
+                                <span>
+                                    <svg class="icon-form">
+                                        <use href="./images/symbol-defs.svg#icon-email-black"></use>
+                                    </svg>
+                                </span>
+                            </label>
+                            
+                            <label class="form-field">
+                                <textarea name="comment" class="comment" placeholder="Введите текст"></textarea>
+                                <span class="form-label">Комментарий</span>
+                            </label>
+
+                            <label class="field">
+                                <input class="visually-hidden checkbox" type="checkbox" name="checkbox"/>
+                                <span class="check">
+                                    <svg class="icon-checkbox">
+                                        <use href="./images/symbol-defs.svg#icon-full-check"></use>
+                                    </svg>
+                                </span>
+                                <span class="label">Соглашаюсь с рассылкой и принимаю
+                                    <span>
+                                        <a href="#">Условия договора</a>
+                                    </span>
+                                </span>
+                            </label>
+                            
+                            <button type="submit" class="button-submit">Отправить</button>
+                        </form>
                     </div>
                 </div>
             </div>
