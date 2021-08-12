@@ -455,6 +455,7 @@ address {
 /* Футер */
 .footer {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-section {
@@ -757,6 +758,7 @@ address {
 
 .modal {
   position: absolute;
+  padding: 40px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -798,26 +800,24 @@ address {
 }
 
 .modal-title {
+  margin-bottom: 12px;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   color: var(--title-text-color);
-  margin-top: 40px;
-  padding: 0 40px;
 }
 
 .form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 12px;
-  padding: 0 40px;
 }
 
 .icon-form {
   position: absolute;
-  top: 11px;
+  top: 27px;
   left: 12px;
   width: 18px;
   height: 18px;
@@ -828,15 +828,20 @@ address {
 
 .form-field {
   position: relative;
-  display: block;
-  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+}
+.form-comment {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 20px;
 }
 
 .form-label {
-  position: absolute;
-  top: -18px;
-  left: 0;
-
+  margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -845,7 +850,6 @@ address {
 }
 
 .form-input {
-  width: 448px;
   height: 40px;
   padding: 12px 42px;
 
@@ -859,7 +863,7 @@ address {
   border: 1px solid var(--accent-color);
 }
 
-.form-input:focus-within ~ .svg .icon-form {
+.form-input:focus-within ~ .icon-form {
   fill: var(--accent-color);
 }
 
@@ -883,7 +887,7 @@ address {
 .field {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .icon-checkbox {
@@ -923,7 +927,6 @@ address {
   margin-left: auto;
   margin-right: auto;
   padding: 10px 55px;
-  margin-top: 30px;
   min-width: 200px;
 
   font-weight: 700;
